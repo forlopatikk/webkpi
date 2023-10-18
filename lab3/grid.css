@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7% 86% 7%;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    height: 100vh;
+}
+
+.block__1 {
+    background-color: rgb(101, 116, 0);
+    display: grid;
+    grid-area: header;
+}
+
+.block__1 .name {
+    color: white;
+    margin: 10px 0;
+}
+
+span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.block__3-4-5-6{
+    grid-area: content;
+}
+.block__2-3-4-5-6 {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80%;
+    grid-template-areas:
+        "sidebar content"
+        "sidebar content";
+}
+
+.block__2 {
+    background-color: rgb(79, 78, 2);
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: repeat(1, 5fr);
+    list-style: none;
+}
+
+.block__2 ul {
+    margin-top: 100%;
+}
+
+.list__link a {
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+.block__3 {
+    background-color: rgb(106, 143, 7);
+    grid-area: content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block__3 p {
+    text-align: center;
+}
+
+.block__4-5-6 {
+    height: 95%;
+    display: grid;
+    grid-template-columns: 60% 0%;
+    grid-template-areas: "block4 block6 block5";
+    
+}
+
+.block__4 {
+    height: 95%;
+    background-color: rgb(151, 136, 0);
+    display: grid;
+    grid-area: block4;   
+}
+.block__4-6 {
+    height: 100%;
+}
+
+.img1__donald {
+    grid-area: block4;
+    object-fit: cover;
+
+}
+
+.block__5 iframe {
+    height: 100%;
+    max-height: 100%;
+}
+
+.block__5 {
+    grid-area: block5;
+}
+
+.block__5 iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.block__6 {
+    height: 5%;
+    background-color: rgb(0, 92, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block__6 p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+.block__7 {
+    background-color: rgb(40, 58, 58);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.block__7 h1 {
+    margin: 0;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.block__7 p {
+    margin: 10px;
+    align-self: flex-start;
+    margin-left: 10px;
+}
