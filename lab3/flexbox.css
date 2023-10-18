@@ -10,6 +10,7 @@ html, body {
 
 body {
 	flex-direction: column;
+	height:100vh;
 }
 
 .block__1 {
@@ -70,7 +71,6 @@ body {
 .block__3-4-5-6 {
 	flex-direction: column;
 	width: 80%;
-	height: 100%;
 }
 
 .block__2-3-4-5-6 {
